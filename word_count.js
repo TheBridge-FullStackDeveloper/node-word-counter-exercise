@@ -1,5 +1,6 @@
 // El módulo fs se utiliza para leer y escribir archivos. Para usarlo, debe solicitarlo en la parte superior de su archivo:
 const fs = require("fs");
+// El método readFileSync lee el archivo que le indicamos en el primer parámetro.
 const read = fs.readFileSync('sample.txt', "utf-8");
 // 1º Eliminar de sample.txt signos de puntuación, mayusculas y convertirlo en array con split. 
 const content = read.toLocaleLowerCase().replaceAll(".", "").replaceAll(",", "").replaceAll("-", "").split(" ");
