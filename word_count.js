@@ -30,4 +30,5 @@ content.forEach(element => {
 });
 
 console.log (javascriptCount);
-const write = fs.writeFileSync('sample.txt',"utf-8")
+const write = fs.writeFileSync('index2.html',"The word 'JavaScript' appears "+ javascriptCount+ " times in the text.")
+console.log(write)
